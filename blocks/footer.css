@@ -1,4 +1,4 @@
-.footer {
+.footer__copyright {
   display: block;
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -9,13 +9,21 @@
 }
 
 @media screen and (max-width: 920px) {
-  .footer {
+  .footer__copyright {
     width: calc(282px + 282px + 17px);
   }
 }
 
 @media screen and (max-width: 620px) {
-  .footer {
+  .footer__copyright {
     width: 282px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .footer__copyright {
+    margin: 48px auto 36px;
+    font-size: 14px;
+    line-height: 1.1;
   }
 }
