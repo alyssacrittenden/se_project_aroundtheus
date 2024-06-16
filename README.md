@@ -1,4 +1,4 @@
-# Project 3: Around The U.S.
+# Project 3 and Project 4: Around The U.S.
 
 This project is made so all the elements are displayed correctly on popular screen sizes (desktop, tablet, and mobile) based on Figma design brief.
 
@@ -10,6 +10,7 @@ This project is made so all the elements are displayed correctly on popular scre
 * Grid
 * Flat BEM file structure
 * Media queries
+* DOM
 
 ### Overview
 
