@@ -49,6 +49,16 @@ const cardTemplate =
 /* -------------------------------------------------------------------------- */
 /*                                  Functions                                 */
 /* -------------------------------------------------------------------------- */
+function fillProfileForm() {
+  profileTitleInput.value = profileTitle.textContent;
+  profileDescriptionInput.value = profileDescription.textContent.trim();
+}
+
+function openProfileEditModal() {
+  fillProfileForm();
+  profileEditModal.classList.add("modal_opened");
+}
+
 function closePopup() {
   profileEditModal.classList.remove("modal_opened");
 }
@@ -74,11 +84,7 @@ function handleProfileEditSubmit(e) {
 /* -------------------------------------------------------------------------- */
 /*                               Event Listeners                              */
 /* -------------------------------------------------------------------------- */
-profileEditButton.addEventListener("click", () => {
-  profileTitleInput.value = profileTitle.textContent;
-  profileDescriptionInput.value = profileDescription.textContent.trim();
-  profileEditModal.classList.add("modal_opened");
-});
+profileEditButton.addEventListener("click", openProfileEditModal);
 
 profileCloseButton.addEventListener("click", closePopup);
 
